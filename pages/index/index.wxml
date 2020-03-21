@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+<image src='https://rg2.oss-cn-shanghai.aliyuncs.com/Logo.jpg' style='height:400rpx;width:400rpx'></image>
+<button class='btn' bindtap='startgame'>
+开始一局
+</button>
+<button class='btn' bindtap='viewscore'>
+
+分数查看
+</button>
+<button class='btn' bindtap='continueGame'>继续游戏</button>
+
+</view>

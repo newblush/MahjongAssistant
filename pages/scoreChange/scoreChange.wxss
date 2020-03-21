@@ -1,0 +1,31 @@
+/* pages/scoreChange/scoreChange.wxss */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    border: 2px solid rgb(156, 44, 156);
+    margin-top:40rpx; 
+    background: #F3F3F3;
+
+
+
+
+}
+
+.btn{
+  margin-top: 10px;
+  background:#ffffff;
+  color:  rgb(156, 44, 156);
+  border: 2px solid rgb(156, 44, 156);
+  margin: 40px 5px;
+  font-size: 20px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  width: 70%
+}
+.btn:active {
+  background-color: rgb(156, 44, 156);
+  color: white;
+}

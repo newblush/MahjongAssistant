@@ -1,0 +1,147 @@
+<!--Component/MajKeyBoard/MajKeyBoard.wxml-->
+<view wx:if="{{isShow}}" class="tiles" style="height:525rpx;background-color:{{backgroundColor}}">
+
+  <block wx:if="{{keyBoardType === 1}}">
+    <view style='display:flex;flex-direction:row'>
+      <view style='width:100%'>
+
+        <view class="tiles-row">
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class="tiles-combo-button{{chi?'-on':''}}"
+          style="border:{{buttonBorder}}" 
+          bindtap='chiTap' 
+          >
+           <view>吃</view>
+          </view>
+
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class="tiles-combo-button{{pon?'-on':''}}"
+          style="border:{{buttonBorder}}" 
+          bindtap='ponTap' 
+          >
+           <view>碰</view>
+          </view>
+
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class="tiles-combo-button{{kan?'-on':''}}"
+          style="border:{{buttonBorder}}" 
+          bindtap='kanTap' 
+          >
+           <view>明杠</view>
+          </view>
+
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class="tiles-combo-button{{closedKan?'-on':''}}"
+          style="border:{{buttonBorder}}" 
+          bindtap='closedKanTap' 
+          >
+           <view>暗杠</view>
+          </view>
+
+          
+        </view>
+
+
+        <view class="tiles-row">
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class='tiles-row-button' 
+          style="border:{{buttonBorder}}" 
+          wx:for="{{majTiles1}}" 
+          bindtap='tilesTap' 
+          data-value="{{item}}"
+          wx:for-index="idx"
+          wx:key="idx"
+          >
+            <image
+              style='width:100%;height:100%'
+              mode='aspectFit' 
+              src='{{item.img}}'
+            ></image>
+          </view>
+        </view>
+
+        <view class="tiles-row">
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class='tiles-row-button' 
+          style="border:{{buttonBorder}}" 
+          wx:for="{{majTiles2}}" 
+          bindtap='tilesTap' 
+          data-value="{{item}}"
+          wx:for-index="idx"
+          wx:key="idx"
+          >
+            <image
+              style='width:100%;height:100%'
+              mode='aspectFit' 
+              src='{{item.img}}'
+            ></image>
+          </view>
+        </view>
+
+        <view class="tiles-row">
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class='tiles-row-button' 
+          style="border:{{buttonBorder}}" 
+          wx:for="{{majTiles3}}" 
+          bindtap='tilesTap' 
+          data-value="{{item}}"
+          wx:for-index="idx"
+          wx:key="idx"
+          >
+            <image
+              style='width:100%;height:100%'
+              mode='aspectFit' 
+              src='{{item.img}}'
+            ></image>
+          </view>
+        </view>
+
+        <view class="tiles-row">
+          <view hover-class="tiles-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class='tiles-row-button' 
+          style="border:{{buttonBorder}}" 
+          wx:for="{{majTiles4}}" 
+          bindtap='tilesTap' 
+          data-value="{{item}}"
+          wx:for-index="idx"
+          wx:key="idx"
+          >
+            <image
+              style='width:100%;height:100%'
+              mode='aspectFit' 
+              src='{{item.img}}'
+            ></image>
+          </view>
+          <view hover-class="tiles-ok-hover" 
+          hover-start-time="10" 
+          hover-stay-time="100" 
+          class='tiles-ok-button' 
+          style="border:{{buttonBorder}}" 
+          bindtap='okTap' 
+          >
+           <view>确定</view>
+          </view>
+        </view>
+
+        
+        
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,9 @@
+<!--pages/dbTest/dbTest.wxml-->
+<view>
+<button bindtap="onCheckUser">新用户？</button>
+<button bindtap="onAddData">创建新记录</button>
+<button bindtap="onAddNewGame">创建新对局</button>
+<button bindtap="onEndRound">结束一巡</button>
+<button bindtap="onCheckLastGame">最近一次对局</button>
+<button bindtap="onCheckGamesHistory">对局历史记录</button>
+</view>

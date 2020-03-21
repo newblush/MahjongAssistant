@@ -1,0 +1,5 @@
+<scroll-view class="contain" scroll-y='true'>
+<block wx:for="{{games}}">
+<view class="item"><text>对局{{index+1}} 时间：{{item[1]}}\n自家:{{item[0][0]}} 下家:{{item[0][1]}} 对家:{{item[0][2]}} 上家:{{item[0][3]}}</text></view>
+</block>
+</scroll-view>

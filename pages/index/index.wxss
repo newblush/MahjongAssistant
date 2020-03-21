@@ -1,0 +1,15 @@
+/**index.wxss**/
+.btn{
+  background:#ffffff;
+  color:  rgb(156, 44, 156);
+  border: 2px solid rgb(156, 44, 156);
+  margin: 10px 5px;
+  font-size: 20px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+.btn:active {
+  background-color: rgb(156, 44, 156);
+  color: white;
+}

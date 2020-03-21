@@ -1,0 +1,25 @@
+<view class="header">
+  <radio-group bindchange="changechoose" class="header">
+    <view class='item'>
+      <label>
+      <radio value='half' checked='true'>
+      </radio>东风场（半庄）
+      </label>
+    </view>
+    <view class='item'>
+      <label>
+      <radio value='whole'>南风场（全庄）
+      </radio>
+      </label>
+    </view>
+  </radio-group>
+</view>
+<view class="container">
+    <button class='btn2' catchtap='f2' style='  background:{{color2}}; color:{{color6}};'>对家</button>
+    <view class='mid-container'>
+      <button class="last-player btn2" catchtap='f3' style='  background:{{color3}}; color:{{color7}};'>上家</button>
+      <button class="next-player btn2" catchtap='f1' style='  background:{{color1}}; color:{{color5}};'>下家</button>
+    </view>
+    <button class='btn2' catchtap='f0' style='  background:{{color0}}; color:{{color4}};'>自家</button>
+  <button class="btn1" style="margin-top:20px;" bindtap='btnclick'>确认</button>
+</view>

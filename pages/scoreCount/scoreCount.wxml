@@ -1,0 +1,5 @@
+<text>pages/scoreCount/scoreCount.wxml</text>
+<view class='container'>
+<button bindtap='btnconfirm'>确定</button>
+<button bindtap='btnreturn'>返回(这个返回真的要吗)</button>
+</view>

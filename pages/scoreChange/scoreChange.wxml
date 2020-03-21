@@ -1,0 +1,12 @@
+<!--pages/scoreChange/scoreChange.wxml-->
+<view class='container'>
+
+<view class='item'>
+上一巡分数：自家：{{oldscore[0]}} 下家：{{oldscore[1]}} 对家{{oldscore[2]}} 上家{{oldscore[3]}}
+</view>
+<view class='item'>
+本巡结束后分数：自家：{{zijia}} 下家：{{xiajia}} 对家:{{duijia}} 上家:{{shangjia}}
+</view>
+
+<button class='btn' bindtap='btnconfirm'>确认</button>
+</view>

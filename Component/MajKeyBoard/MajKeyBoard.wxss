@@ -1,0 +1,94 @@
+:host {
+  width: 100%;
+}
+.tiles {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  z-index: 1000;
+}
+.tiles-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tiles-row-last{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tiles-row-button {
+  background-color: #fff;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.tiles-del-button {
+  background-color: #fff;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.tiles-ok-button {
+  background-color: #4169E1;
+  color: #fff;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.tiles-combo-button {
+  background-color: #ccc;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.tiles-combo-button-on {
+  background-color: #87CEEB;
+  color: #fff;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 10rpx;
+}
+.tiles-row-button-number {
+  background-color: #eee;
+}
+.tiles-row-button-last {
+  width: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.tiles-hover {
+  background-color: #ccc;
+}
+.tiles-ok-hover {
+  background-color: #ccc;
+  color: #000;
+}
+.tiles-row-button-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

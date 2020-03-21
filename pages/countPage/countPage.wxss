@@ -1,0 +1,39 @@
+/* pages/countPage.wxss */
+:host{
+  background-color:	#F2F2F2;
+}
+.yiFaHide{
+ display: none;
+}
+.dora-button {
+  background-color: #fff;
+  margin: 5rpx;
+  padding: 5rpx;
+  width: 70rpx;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 10rpx;
+}
+.tiles-row {
+  display: flex;
+  justify-content:flex-start ;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 150rpx;
+}
+
+.tiles-row-button {
+  width: 90rpx;
+  height: 150rpx;
+}
+
+.tiles-row-button3 {
+  width: 270rpx;
+  height: 150rpx;
+}
+
+.tiles-row-button4 {
+  width: 360rpx;
+  height: 150rpx;
+}

@@ -1,0 +1,16 @@
+
+<view class="container">
+  <view class='circle'>
+    <view class='majiang1'>{{state0}}</view>
+    <view class='majiang2'>{{state1}}</view>
+  </view>
+  <button class='btn2' catchtap='f2' style='  background:{{color2}}; color:{{color6}};' disabled='{{isdisable[2]}}'>对家</button>
+  <view class='mid-container'>
+    <button class="last-player btn2" catchtap='f3' style='  background:{{color3}}; color:{{color7}};' disabled='{{isdisable[3]}}'>上家</button>
+    <button class="next-player btn2" catchtap='f1' style='  background:{{color1}}; color:{{color5}};' disabled='{{isdisable[1]}}'>下家</button>
+  </view>
+  <button class='btn2' catchtap='f0' style='  background:{{color0}}; color:{{color4}};' disabled='{{isdisable[0]}}'>自家</button>
+<button class="btn1" tyle="margin-top:20px;" bindtap='sure'>确认</button>
+
+
+</view>

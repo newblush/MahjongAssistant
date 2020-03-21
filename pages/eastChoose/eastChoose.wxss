@@ -1,0 +1,83 @@
+/**index.wxss**/
+
+.container {
+  
+  background-color: #fff;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+  margin-top:-20vh; 
+
+}
+
+.header{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+.last-player{
+  position: relative;
+  right:100rpx;
+  
+  
+}
+
+.next-player{
+  position: relative;
+  left:100rpx;
+  
+}
+.mid-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn1{
+  background:#ffffff;
+  color:  rgb(156, 44, 156);
+  border: 2px solid rgb(156, 44, 156);
+  margin: 10px 5px;
+  font-size: 20px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  width:50%;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.btn1:active {
+  background-color: rgb(156, 44, 156);
+  color: white;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.btn2{
+  background:rgb(156, 44, 156);
+  color:  #ffffff;
+  border: 2px solid rgb(156, 44, 156);
+  margin: 10px 5px;
+  font-size: 20px;
+  border-radius: 25px;
+  transition-duration: 0.4s;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.btn2:active {
+  background-color: white;
+  color:rgb(156, 44, 156); 
+  box-shadow: 2px 2px 5px #888888;
+}
+.item{
+    font-family:xiaodanchunti;
+}

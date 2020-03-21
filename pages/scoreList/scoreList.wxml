@@ -1,0 +1,33 @@
+<!--pages/startround/startround.wxml-->
+<view class='main'>
+<view class='top'>
+  <view class='header'>
+  <text>巡数</text>
+  <text>自家</text>
+  <text>下家</text>
+  <text>对家</text>
+  <text>上家</text>
+  </view>
+  <scroll-view class="contain" scroll-y='true'>
+    <block wx:for="{{score}}">
+      <view class="item">
+      <text>{{index==0?"初始点棒":"对 局"}}{{index==0?"":index}}</text>
+      <text>{{item[0]}}</text>
+      <text>{{item[1]}}</text>
+      <text>{{item[2]}}</text>
+      <text>{{item[3]}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<view class='title'>
+  <!-- <text>正在进行第{{time}}巡</text> -->
+  <text>正在进行   {{max==1?"东":"南"}}风场 {{b%4==0?"东":b%4==1?"南":b%4==2?"西":"北"}}-{{c}}局 {{d}}本场</text>
+
+</view>
+<view class='btn-container'>
+  <button class='btn' bindtap='btnhepai'>和牌算分</button>
+  <button class='btn'bindtap='btnhuangpai'>荒牌流局</button>
+  <button class='btn'bindtap='btnstop'>强制结束</button>
+</view>
+</view>

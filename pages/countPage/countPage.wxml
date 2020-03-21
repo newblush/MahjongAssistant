@@ -1,0 +1,169 @@
+<text>{{seats[seatIndex]}}家和牌输入</text>
+<view>
+  <text>特殊役</text>
+  <switch bindchange="SpecialChange" />
+</view>
+<view wx:if="{{specialShow}}">
+  <block wx:if="{{!special[15]}}">
+    <view>
+      <text>国士无双</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{1}}" checked='{{special[1]}}'/>
+    </view>
+    <view wx:if="{{special[1]}}">
+      <text>国士无双十三面听</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{2}}" checked='{{special[2]}}'/>
+    </view>
+    <view>
+      <text>四暗刻</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{3}}" checked='{{special[3]}}'/>
+    </view>
+    <view wx:if="{{special[3]}}">
+      <text>四暗刻单骑</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{4}}" checked='{{special[4]}}'/>
+    </view>
+    <view>
+      <text>九莲宝灯</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{5}}" checked='{{special[5]}}'/>
+    </view>
+    <view wx:if="{{special[5]}}">
+      <text>纯正九莲宝灯</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{6}}" checked='{{special[6]}}'/>
+    </view>
+    <view>
+      <text>小四喜</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{7}}" checked='{{special[7]}}'/>
+    </view>
+    <view>
+      <text>大四喜</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{8}}" checked='{{special[8]}}'/>
+    </view>
+    <view>
+      <text>天和/地和</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{9}}" checked='{{special[9]}}'/>
+    </view>
+    <view>
+      <text>大三元</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{10}}" checked='{{special[10]}}'/>
+    </view>
+    <view>
+      <text>字一色</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{11}}" checked='{{special[11]}}'/>
+    </view>
+    <view>
+      <text>绿一色</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{12}}" checked='{{special[12]}}'/>
+    </view>
+    <view>
+      <text>清老头</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{13}}" checked='{{special[13]}}'/>
+    </view>
+    <view>
+      <text>四杠子</text>
+      <switch bindchange="SpecialDetailChange" data-value="{{14}}" checked='{{special[14]}}'/>
+    </view>
+  </block>
+  
+  <view>
+    <text>流局满贯</text>
+    <switch bindchange="SpecialDetailChange" data-value="{{15}}" checked='{{special[15]}}'/>
+  </view>
+</view>
+
+<view wx:if="{{!specialShow}}">
+  <view>
+  <text>立直</text>
+  <switch bindchange="richiChange" checked='{{richi}}' disabled='true'/>
+  </view>
+  <view wx:if="{{richi}}">
+  <text>W立直</text>
+  <switch bindchange="wRichiChange" checked='{{wRichi}}'/>
+  </view>
+  <view wx:if="{{richi}}">
+  <text>一发</text>
+  <switch bindchange="ippatsuChange" checked='{{ippatsu}}'/>
+  </view>
+  <view>
+  <text>枪杠</text>
+  <switch bindchange="chankanChange" checked='{{chankan}}'/>
+  </view>
+  <view>
+  <text>岭上开花</text>
+  <switch bindchange="rinshanChange" checked='{{rinshan}}'/>
+  </view>
+  <view>
+  <text>海底摸月/河底捞鱼</text>
+  <switch bindchange="winOnLastChange" checked='{{winOnLast}}'/>
+  </view>
+  <view style='display:flex; align-items:center'>
+  <text>宝牌</text>
+  <button class="dora-button" bindtap='DoraSub'>-</button>
+  <text>{{dora}}</text>
+  <button class="dora-button" bindtap='DoraAdd'>+</button>
+  </view>
+  
+  <text >手牌/副露输入</text>
+  <view style='border:5rpx dashed black;border-radius:20rpx' bindtap='KeyboardChange'>
+    
+    <view class="tiles-row">
+      <view class='tiles-row-button' 
+      style="border:{{buttonBorder}}" 
+      wx:for="{{handTiles}}" 
+      bindtap='TilesTap' 
+      data-value="{{item}}"
+      data-index="{{idx}}"
+      wx:for-index="idx"
+      wx:key="idx"
+      >
+        <image
+          style='width:100%;height:100%'
+          mode='aspectFit' 
+          src='{{item.img}}'
+        ></image>
+      </view>
+    </view>
+    <view class="tiles-row">
+      <view hover-class="tiles-hover" 
+      hover-start-time="10" 
+      hover-stay-time="100" 
+      class='tiles-row-button{{item.length}}' 
+      style="border:{{buttonBorder}}" 
+      wx:for="{{showTiles}}" 
+      bindtap='ShowTilesTap' 
+      data-value="{{item}}"
+      data-index="{{idx}}"
+      wx:for-index="idx"
+      wx:key="idx"
+      >
+        <image
+          style='width:{{100/item.length}}%;height:100%'
+          mode='aspectFit' 
+          src='{{item[0].img}}'
+        ></image>
+        <image
+          style='width:{{100/item.length}}%;height:100%'
+          mode='aspectFit' 
+          src='{{item[1].img}}'
+        ></image>
+        <image
+          style='width:{{100/item.length}}%;height:100%'
+          mode='aspectFit' 
+          src='{{item[2].img}}'
+        ></image>
+        <image
+          style='width:{{100/item.length}}%;height:100%'
+          mode='aspectFit' 
+          src='{{item[3].img}}'
+        ></image>
+      </view>
+    </view>
+
+</view>
+
+
+</view>
+<button bindtap='InputOK'>确认</button>
+<view style='height:525rpx'></view>
+
+
+<view><majkeyboard is-show="{{keyboardShow}}" bindok="KeyboardChange"  bindinput="Input" bindinputChi="InputChi" bindinputPon="InputPon" bindinputKan="InputKan" bindinputClosedKan="InputClosedKan" key-board-type="{{1}}" backgroundColor="#fff" /></view>
+

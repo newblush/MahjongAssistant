@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/eastChoose/eastChoose",
+    "pages/scoreChange/scoreChange",
+    "pages/drawRound/drawRound",
+    "pages/winningChoose/winningChoose",
+    "pages/scoreList/scoreList",
+    "pages/scoreCount/scoreCount",
+    "pages/gameHistory/gameHistory",
+    "pages/countPage/countPage"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
